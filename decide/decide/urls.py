@@ -27,6 +27,8 @@ urlpatterns = [
     path('gateway/', include('gateway.urls')),
 ]
 
+##commit1
+
 for module in settings.MODULES:
     urlpatterns += [
         path('{}/'.format(module), include('{}.urls'.format(module)))
